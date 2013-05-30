@@ -1,0 +1,6 @@
+apply plugin: 'ear'
+
+dependencies {
+	deploy project(':GradleJavaee-ejb')
+	deploy project(path: ':GradleJavaee-web', configuration: 'archives')
+}

@@ -1,0 +1,9 @@
+
+allprojects {
+	version = '1.0-SNAPSHOT'
+	group = 'ch.test'
+
+	repositories {
+		mavenCentral()
+	}
+}

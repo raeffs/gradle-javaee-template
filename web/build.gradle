@@ -1,0 +1,9 @@
+apply plugin: 'war'
+
+dependencies {
+	providedCompile project(':GradleJavaee-ejb')
+	providedCompile group: 'javax', name: 'javaee-web-api', version: '6.0'
+
+	testCompile group: 'junit', name: 'junit', version: '4.11'
+	testCompile group: 'org.mockito', name: 'mockito-all', version: '1.9.5'
+}

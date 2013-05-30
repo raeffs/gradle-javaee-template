@@ -1,0 +1,8 @@
+include 'ear'
+include 'ejb'
+include 'web'
+
+rootProject.name = 'GradleJavaee'
+rootProject.children.each { project ->
+	project.name = "$rootProject.name-$project.name"
+}
