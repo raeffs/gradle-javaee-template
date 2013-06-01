@@ -1,6 +1,8 @@
 
+defaultTasks 'clean', 'assemble'
+
 allprojects {
-	version = '1.0-SNAPSHOT'
+	version = rootProject.file('version.txt').text.trim()
 	group = 'ch.test'
 
 	repositories {
